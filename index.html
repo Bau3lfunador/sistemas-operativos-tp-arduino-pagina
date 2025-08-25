@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino - Electrónica y Programación</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="https://th.bing.com/th/id/R.847f9ebf5c384197d3cc744044d3b37a?rik=EVHf5TJqKlnE8w&pid=ImgRaw&r=0" alt="Logo Arduino" width="80">
+      <svg width="80" height="40" viewBox="0 0 200 100">
+        <ellipse cx="60" cy="50" rx="50" ry="30" fill="#00979D"/>
+        <ellipse cx="140" cy="50" rx="50" ry="30" fill="#00979D"/>
+        <rect x="95" y="45" width="10" height="10" fill="white"/>
+      </svg>
+      <h1>Arduino World</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#placas">Placas</a></li>
+        <li><a href="#sensores">Sensores</a></li>
+        <li><a href="#alimentacion">Alimentación</a></li>
+        <li><a href="#programacion">Programación</a></li>
+        <li><a href="#ejemplos">Ejemplos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="placas">
+      <h2>Placas Arduino</h2>
+      <p>Las placas Arduino son el corazón del sistema. Las más comunes son: Arduino UNO, Mega, Nano y Leonardo.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg" width="250" alt="Arduino UNO">
+    </section>
+
+    <section id="sensores">
+      <h2>Sensores</h2>
+      <p>Existen múltiples sensores compatibles con Arduino: temperatura, humedad, ultrasonido, movimiento, entre otros.</p>
+      <img src="https://cdtechnologia.net/9759-large_default/sensor-de-distancia-ultrasonico-hysrf05.jpg" width="250" alt="Sensor ultrasonido">
+    </section>
+
+    <section id="alimentacion">
+      <h2>Alimentación</h2>
+      <p>Arduino puede alimentarse por USB (5V), pilas, baterías de litio o fuentes externas de hasta 12V.</p>
+      <img src="https://www.arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg" width="250" alt="Alimentación Arduino">
+    </section>
+
+    <section id="programacion">
+      <h2>Entorno de Programación (IDE)</h2>
+      <p>El <b>Arduino IDE</b> permite escribir, compilar y cargar programas en la placa. El lenguaje usado es C/C++ con librerías propias.</p>
+      <pre><code>
+// Ejemplo: Parpadeo LED
+int led = 13;
+void setup() {
+  pinMode(led, OUTPUT);
+}
+void loop() {
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led, LOW);
+  delay(1000);
+}
+      </code></pre>
+    </section>
+
+    <section id="ejemplos">
+      <h2>Ejemplos Interactivos</h2>
+      <button id="ledBtn">Encender LED Virtual</button>
+      <div id="led"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Arduino World - Página educativa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
