@@ -1,3 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
